@@ -1,0 +1,39 @@
+### Installation
+
+Deux méthodes sont possible : </br>
+
+####Méthode 1 
+
+Pré-requis : 
+- Avoir python 3.x d'installer
+
+- Un fichier requirements.txt, censé contenir les dépendances (librairies) du projet est bien présent.
+Cependant il n'y a pas d'utilité à l'installer du fait qu'il est vide. Les librairies utilisées pour ce projet
+sont native à python.
+
+####Méthode 2
+
+Pré-requis :
+- Avoir docker d'installer 
+
+## Lancement de l'application
+
+En suivant la méthode 1 :
+- Se placer dans le dossier robot/ et saisir en ligne de commande 
+
+```
+python src/get_final_position.py
+```
+
+En suivant la méthode 2 : 
+- Se placer dans le dossier robot/ et saisir en ligne de commande
+```
+docker build . --tag="robotbvzxr:v1"
+```
+Cette commande permet de build l'image docker grâce aux instructions définies dans le .dockerfile
+
+- Une fois l'image construite vous pouvez lancer le conteneur docker avec la commande suivante
+```
+docker run robotbvzxr:v1
+```
+Cette commande a pour but d'éxécuter le programme python dans un conteneur docker
