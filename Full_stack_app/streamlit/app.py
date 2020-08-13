@@ -1,11 +1,14 @@
 from predict import process
 
 import streamlit as st
+import os
 
 st.title(f"Ma première WebAPP ML")
 
 # fastapi endpoint
-url = 'http://fastapi:8000'
+# Run en local docker-compose
+# url = 'http://fastapi:8000'
+url = 'https://genderdeployapi.herokuapp.com'
 prefix = '/gender'
 endpoint = '/predict_gender'
 

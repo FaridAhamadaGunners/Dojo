@@ -5,3 +5,6 @@ pydantic==1.6.1
 scikit_learn==0.23.1
 starlette==0.13.5
 fastapi
+honcho
+#requests==2.23.0
+#streamlit==0.63.1
